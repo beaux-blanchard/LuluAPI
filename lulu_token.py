@@ -19,23 +19,23 @@ if SANDBOX:
 
     """SANDBOX CLIENT KEYS"""
 
-    CLIENT_KEY = "2c8b4b94-96c6-40ca-9abf-bcb4c453fe7d"
+    CLIENT_KEY = ""
 
-    CLIENT_SECRET = "OVlQPIEXW4HAXhVwr0RToGQn13WSbEqt"
+    CLIENT_SECRET = ""
 
-    BASE64_KEY_SECRET = "Basic MmM4YjRiOTQtOTZjNi00MGNhLTlhYmYtYmNiNGM0NTNmZTdkOk9WbFFQSUVYVzRIQVhoVndyMFJUb0dRbjEzV1NiRXF0"
+    BASE64_KEY_SECRET = ""
 
 else:
     URLPREFIX = f"https://api.lulu.com/"
 
     """CLIENT KEYS"""
-    CLIENT_KEY = "e282a92c-4021-461a-a9ee-0c361a731627"
+    CLIENT_KEY = ""
 
     # The client secret can be changed on the developer tools website.
-    CLIENT_SECRET = "2elKWSZsgg7gvaJhgY87HpzAEnILPUmu"
+    CLIENT_SECRET = ""
 
     # This is the combined key in base 64. The word "basic" is required prior to the rest of the code.
-    BASE64_KEY_SECRET = "Basic ZTI4MmE5MmMtNDAyMS00NjFhLWE5ZWUtMGMzNjFhNzMxNjI3OjJlbEtXU1pzZ2c3Z3ZhSmhnWTg3SHB6QUVuSUxQVW11"
+    BASE64_KEY_SECRET = ""
 
 # The URL to retrieve a OAuth (the communication system) token. Tokens expire after a few minutes.
 url = f"{URLPREFIX}auth/realms/glasstree/protocol/openid-connect/token"
@@ -65,4 +65,5 @@ def get_token(json=False):
         else:
             return auth_code
     else:
+
         raise KeyError(f"Failed to get token. Status code: {token_response.status_code}")
