@@ -15,7 +15,7 @@ if SANDBOX:
 
     CLIENT_SECRET = "PLACE SANDBOX KEY HERE"
 
-    BASE64_KEY_SECRET = "PLACE SANDBOX KEY HERE, INCLUDING 'basic' "
+    BASE64_KEY_SECRET = "PLACE SANDBOX KEY HERE, INCLUDING basic"
 
 else:
     URLPREFIX = f"https://api.lulu.com/"
@@ -27,7 +27,7 @@ else:
     CLIENT_SECRET = "PLACE KEY HERE"
 
     # This is the combined key in base 64. The word "basic" is required prior to the rest of the code.
-    BASE64_KEY_SECRET = "PLACE KEY HERE, INCLUDING 'basic'"
+    BASE64_KEY_SECRET = "PLACE KEY HERE, INCLUDING basic"
 '''
 
 ## Documentation
