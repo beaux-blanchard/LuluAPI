@@ -4,7 +4,7 @@ A python library that utilizes Lulu's print API to facilitate communication betw
 ## Getting Started
 In order to use the Lulu API, you need a set of keys to faciliate communication. If you have a Lulu developer account, they keys can be found [here](https://developers.lulu.com/user-profile/api-keys). Additionally, if you wish to run tests, you will need a seperate set of sandbox keys, found [here](https://developers.sandbox.lulu.com/user-profile/api-keys). Once you have your keys, you should place them in their respective spots in the lulu_token.py file. Ensure that the sandbox keys and the non-sandbox keys are in the correct locations to avoid accidentally sending real print-jobs to Lulu during testing.
 
-'''python
+"""python
 if SANDBOX:
     print("***SANDBOX ACTIVE***")
     URLPREFIX = "https://api.sandbox.lulu.com/"
@@ -28,7 +28,7 @@ else:
 
     # This is the combined key in base 64. The word "basic" is required prior to the rest of the code.
     BASE64_KEY_SECRET = "PLACE KEY HERE, INCLUDING basic"
-'''
+"""
 
 ## Documentation
 All of the documentation for the functions is included in the request.py file.
